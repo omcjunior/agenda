@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="appAgenda">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Agenda de Voo</title>
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<!-- nav -->
+	<h1>Agenda de Voo</h1>
+	<hr>
+	<!-- contents -->
+	<div class="container-fluid">
+		<div ui-view></div>
+	</div>
+
+
+	<!-- footer -->
+	
+	<!-- scripts -->
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+	<!-- app -->
+	<script src="app.js"></script>
+	<script src="config.js"></script>
+	<script src="run.js"></script>
+	
+	<!-- services -->
+	<script src="services/url.js"></script>
+	<script src="services/usuarios.js"></script>
+
+	<!-- controllers -->
+	<script src="home/home.js"></script>
+	<script src="usuarios/usuarios.js"></script>
+
+
+</body>
+</html>

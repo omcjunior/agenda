@@ -1,0 +1,28 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>Gestão de Usuários</h4>
+	</div>
+	<div class="panel-body">
+		<table class="table table-hover table-striped table-bordered table-condensed">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Nome</th>
+					<th>Email</th>
+					<th>Opções</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="value in usuarios.dataUser.data" ng-class="{'danger' : usuarios.selected == $index}">
+					<td>{{value.UserID}}</td>
+					<td>{{value.UserName}}</td>
+					<td>{{value.UserEmail}}</td>
+					<td>
+						<button class="btn btn-default btn-sm" ng-click="usuarios.editar(value, $index)">Editar</button>
+						<button class="btn btn-danger btn-sm" ng-click="usuarios.remover(value)">Remover</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
