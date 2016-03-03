@@ -2,8 +2,8 @@
 (function(){
 	angular.module('appAgenda').run(run);
 
-	function run(){
-
+	function run($rootScope){
+        $rootScope.appTitle = "Agenda";
 	};
-	
+
 })();
